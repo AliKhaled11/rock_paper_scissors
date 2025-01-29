@@ -57,11 +57,13 @@ body {
   gap: 1rem;
 }
 
-.result-box {
+.result-box,
+h1 {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   padding: 1rem;
+  margin: auto;
   min-width: 300px;
   flex: 1 1;
   border: 2px solid #fff;
@@ -80,10 +82,4 @@ body {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
