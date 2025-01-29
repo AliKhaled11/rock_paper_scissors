@@ -7,7 +7,7 @@ const humanScoreCounter = document.querySelector(".human-score-counter");
 const computerScoreCounter = document.querySelector(".computer-score-counter");
 const resultsContainer = document.querySelector(".results-container");
 const resultImage = document.createElement("img");
-const endMsg = document.createElement("h1");
+const endMsg = document.createElement("button");
 
 // Add style to the image
 resultImage.style.cssText =
@@ -15,6 +15,8 @@ resultImage.style.cssText =
 
 // Add the end message
 endMsg.textContent = "Refresh the page for a new round";
+endMsg.classList.add("refresh", "button");
+endMsg.addEventListener("click", () => window.location.reload());
 
 // Images/GIFs for results after 5 wins
 const winGif = "spongbob.gif";
